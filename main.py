@@ -9,6 +9,11 @@ import typing
 import logging
 import typing
 
+# from async import *
+from dice import *
+from dynamic import *
+#./game.py
+
 
 def fib_iter_0(n: int = 0) -> typing.Iterator[int]:
   if n == 0:
@@ -94,7 +99,9 @@ def main():
   # print(list(iter_fib(1)))
   # print(list(iter_fib(2)))
   # print(list(iter_fib(10)))
-  print(list(fib_gen_1(10)))
+  # print(list(fib_gen_1(10)))
+  print(roll())
+  print(roll(50, 40))
 
 
 if __name__ == '__main__':
